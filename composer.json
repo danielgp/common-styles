@@ -1,0 +1,18 @@
+{
+    "name": "danielgp/common-styles",
+    "description": "Common styles crafted in SCSS and targeted to specific DOM areas so assambling would be easier",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":     "Daniel Popiniuc",
+            "email":    "danielpopiniuc@gmail.com",
+            "role":     "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "archive": {
+        "exclude": ["/nbproject"]
+    }
+}

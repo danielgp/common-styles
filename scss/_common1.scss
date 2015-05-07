@@ -1,0 +1,136 @@
+/*
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Daniel Popiniuc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+* {
+    @extend .noMarginNoPadding;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    outline: none;
+    z-index: 0;
+}
+a {
+    color: #666;
+    //color: #0000FF;
+    text-decoration: none;
+}
+a:focus,
+a:hover {
+    color:#ee3124;
+}
+a:active {
+    color:#919191  !important;
+}
+body {
+    color:#{$backgroundColor};
+    width:100%;
+}
+fieldset {
+    @extend .rounded;
+    border:#{$companyColor} 2px solid;
+    margin: 8px;
+    padding: 10px;
+}
+h1 {
+    @extend .greyThinShaddow;
+}
+h2 {
+    padding-left:5px;
+    @extend .resetOnly;
+    @extend .greyThinShaddow;
+}
+hr {
+    margin:0px;
+    line-height: 1px;
+}
+img {
+    border:none;
+    @extend .rounded;
+}
+img[height='16'][width='16'],img[width='16'][height='16'],img:hover {
+    border-radius:0px !important;
+}
+label,.fake_label {
+    position:absolute;
+    margin-left:5px;
+    width:205px;
+    border-bottom:1px dotted #dcdcdc;
+}
+legend {
+    @extend .rounded;
+    @extend .whiteThinShaddow;
+    @extend .importantText;
+    margin-left: 10px;
+    padding-left:6px;
+    padding-right:6px;
+    @extend .companyGradient;
+}
+p {
+    color:#{$backgroundColor};
+}
+sub, sup {
+    font-size:x-small;
+}
+ul {
+    margin-left: 30px;
+}
+.greyThinShaddow {
+    text-shadow: 1px 1px 2px #999999;
+}
+.importantText {
+    font-weight:bold;
+}
+.input_readonly {
+    background-color:#D3D3D3;
+}
+.moduleLeft {
+    line-height: 18px;
+    padding-left: 18px;
+}
+.noMarginNoPadding {
+    margin:0px;
+    padding:0px;
+}
+.paddingRight18px {
+    padding-right: 18px;
+}
+.resetOnly {
+    float:none;
+    clear:both;
+}
+.reset {
+    height:1px;
+    @extend .resetOnly;
+}
+.rounded {
+    border-radius: #{$defaultRoundedRadius};
+}
+.roundedTopOnly {
+    -moz-border-radius: #{$defaultRoundedRadius} #{$defaultRoundedRadius} 0px 0px;
+    -webkit-border-radius: #{$defaultRoundedRadius} #{$defaultRoundedRadius} 0px 0px;
+    border-radius: #{$defaultRoundedRadius} #{$defaultRoundedRadius} 0px 0px;
+}
+.whiteThinShaddow {
+    text-shadow: 1px 1px 1px #FFF;
+}
