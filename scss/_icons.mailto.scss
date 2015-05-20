@@ -23,12 +23,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
-a[href^="mailto:"] {
+a[href^='mailto:'] {
     padding-left: inherit !important;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
-a[href^="mailto:"]::before {
+a[href^='mailto:']::before {
     font-family: "FontAwesome";
     font-size: 1.2em;
     content: "\f003";

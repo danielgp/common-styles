@@ -10,6 +10,9 @@
             "role":     "Developer"
         }
     ],
+    "require": {
+        "fortawesome/font-awesome": "*"
+    },
     "minimum-stability": "stable",
     "prefer-stable": true,
     "archive": {
