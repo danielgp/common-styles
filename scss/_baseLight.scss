@@ -65,6 +65,7 @@ $rightIconPlaceholder: top right no-repeat;
     @include background-image(linear-gradient(top,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%));
 }
 .GradientOdd {
-    @include filter-gradient(#ffffff, #00ffffff, vertical); // IE6-9
+    background-color: #ffffff; // Old browsers
+    @include filter-gradient(#ffffff, #00ffff, vertical); // IE6-9
     @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%));
 }
