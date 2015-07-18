@@ -1,0 +1,71 @@
+/*
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Daniel Popiniuc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+
+@import "compass";
+
+$backgroundColor:#000;
+$backgroundGrey:#e5e5e5;
+$companyColor:#ee3124;
+$defaultRoundedRadius:5px; 
+$foregroundColor:#fff;
+$highlightedElement:#3399ff;
+$imageUrl:"/images/";
+$leftIconPlaceholder: center left no-repeat; 
+$rightIconPlaceholder: top right no-repeat;
+.appTitle {
+    font-size: xx-large;
+    text-shadow: 1px 1px 1px #000;
+}
+.companyGradient {
+    background: rgb(253,3,5); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgb(253,3,5) 0%, rgb(255,153,153) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(253,3,5)), color-stop(100%,rgb(255,153,153))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgb(253,3,5) 0%,rgb(255,153,153) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgb(253,3,5) 0%,rgb(255,153,153) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgb(253,3,5) 0%,rgb(255,153,153) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgb(253,3,5) 0%,rgb(255,153,153) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd0305', endColorstr='#ff9999',GradientType=1 ); /* IE6-9 */
+}
+.companyGradientReversed {
+    background: rgb(255,153,153); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgb(255,153,153) 0%, rgb(253,3,5) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(255,153,153)), color-stop(100%,rgb(253,3,5))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgb(255,153,153) 0%,rgb(253,3,5) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgb(255,153,153) 0%,rgb(253,3,5) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgb(255,153,153) 0%,rgb(253,3,5) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgb(255,153,153) 0%,rgb(253,3,5) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9999', endColorstr='#fd0305',GradientType=1 ); /* IE6-9 */
+}
+.GradientEven {
+    background-color: rgb(149,149,149); // Old browsers
+    @include filter-gradient(#959595, #1b1b1b, vertical); // IE6-9
+    @include background-image(linear-gradient(top,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%));
+}
+.GradientOdd {
+    background-color: #aebcbf; // Old browsers
+    @include filter-gradient(#aebcbf, #0a0809, vertical); // IE6-9
+    @include background-image(linear-gradient(top,  #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%));
+}

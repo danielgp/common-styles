@@ -59,10 +59,10 @@ table {
         }
     }
     tr:nth-child(even) {
-        @extend .gradientGreyGlassHorizontal;
+        @extend .GradientEven;
     }
     tr:nth-child(odd) {
-        background: #FFF;
+        @extend .GradientOdd;
     }
     tr:hover {
         background:$highlightedElement !important;
