@@ -24,7 +24,8 @@ SOFTWARE.
 
 */
 
-@import "compass";
+@import "compass/css3";
+@import "_added_mixins.scss";
 
 $backgroundColor:#000;
 $backgroundGrey:#e5e5e5;
@@ -38,6 +39,9 @@ $rightIconPlaceholder: top right no-repeat;
 .appTitle {
     font-size: xx-large;
     text-shadow: 1px 1px 1px #000;
+}
+.boxShadow {
+    @include box-shadow(0px, 0px, 10px, #f00);
 }
 .companyGradient {
     background: rgb(253,3,5); /* Old browsers */
