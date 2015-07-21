@@ -26,8 +26,9 @@ SOFTWARE.
 input,select,textarea {
     @extend .rounded;
     background-color: #f0f0f0;
-    @include box-shadow(0px, 1px, 4px, rgba(0,0,0,.24), true);
     border: 1px inset #{$foregroundColor};
+    color:#{$backgroundColor};
+    @include box-shadow(0px, 1px, 4px, rgba(0,0,0,.24), true);
 }
 input:hover,label:hover,select:hover,textarea:hover {
     background-color:#{$highlightedElement};
@@ -39,13 +40,14 @@ input[type="button"],input[type="reset"],input[type="submit"] {
     margin:0.5em;
     padding:0.5em;
     color:#{$foregroundColor};
+    @extend .boxShadow;
     @extend .importantText;
     @extend .greyThinShaddow;
     @extend .gradientGrey1;
 }
 input[type="button"]:hover,input[type="submit"]:hover {
     @extend .gradientGreenLightToDark;
-    color:#{$foregroundColor};
+    color:#{$backgroundColor};
 }
 input[type='checkbox'],input[type='radio'] {
     box-shadow: none;
@@ -56,6 +58,7 @@ input[type='reset'] {
 }
 input[type='text']:focus,input[type='password']:focus,textarea:focus {
     background-color:#{$highlightedElement};
+    color:#{$foregroundColor};
     margin-bottom:5px;
     padding-left: 5px;
     @extend .boxShadow;

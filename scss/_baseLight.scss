@@ -41,7 +41,7 @@ $rightIconPlaceholder: top right no-repeat;
     text-shadow: 1px 1px 1px #000;
 }
 .boxShadow {
-    @include box-shadow(0px, 0px, 10px, #000);
+    @include box-shadow(0px, 0px, 10px, #f00);
 }
 .companyGradient {
     background: rgb(253,3,5); /* Old browsers */
