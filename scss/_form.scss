@@ -45,7 +45,7 @@ input[type="button"],input[type="reset"],input[type="submit"] {
 }
 input[type="button"]:hover,input[type="submit"]:hover {
     @extend .gradientGreenLightToDark;
-    color:#{$backgroundColor};
+    color:#{$foregroundColor};
 }
 input[type='checkbox'],input[type='radio'] {
     box-shadow: none;
