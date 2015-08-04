@@ -27,7 +27,7 @@ input,select,textarea {
     @extend .rounded;
     background-color: #f0f0f0;
     border: 1px inset #{$foregroundColor};
-    color:#{$backgroundColor};
+    color:#{$foregroundColor};
     @include box-shadow(0px, 1px, 4px, rgba(0,0,0,.24), true);
 }
 input:hover,label:hover,select:hover,textarea:hover {
@@ -47,7 +47,7 @@ input[type="button"],input[type="reset"],input[type="submit"] {
 }
 input[type="button"]:hover,input[type="submit"]:hover {
     @extend .gradientGreenLightToDark;
-    color:#{$backgroundColor};
+    color:#{$foregroundColor};
 }
 input[type='checkbox'],input[type='radio'] {
     box-shadow: none;
