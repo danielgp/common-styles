@@ -32,15 +32,16 @@ SOFTWARE.
 }
 a {
     color: #666;
-    //color: #0000FF;
     text-decoration: none;
-}
-a:focus,
-a:hover {
-    color:#ee3124;
-}
-a:active {
-    color:#919191  !important;
+    &:active {
+        color:#919191 !important;
+    }
+    &:focus {
+        color:#ee3124;
+    }
+    &:hover {
+        color:#ee3124;
+    }
 }
 body {
     background-color:#{$backgroundColor};
@@ -69,10 +70,13 @@ img {
     border:none;
     @extend .rounded;
 }
-img[height='16'][width='16'],img[width='16'][height='16'],img:hover {
+img[height='16'][width='16'],
+img[width='16'][height='16'],
+img:hover {
     border-radius:0px !important;
 }
-label,.fake_label {
+label,
+.fake_label {
     position:absolute;
     margin-left:5px;
     width:205px;

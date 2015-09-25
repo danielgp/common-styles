@@ -40,33 +40,32 @@ table {
         border-bottom:1px dotted #ccc !important;
         td {
             @extend .leftRightSpacing;
-        }
-        td:hover {
-            @extend .gradientYellowSpaceWithWhiteCenter;
-            color: #000 !important;
+            &:hover {
+                @extend .gradientYellowSpaceWithWhiteCenter;
+                color: #000 !important;
+            }
         }
         th {
             border: 1px inset #FFF;
-            box-shadow:none;
+            box-shadow: none;
             color: #333;
             @extend .gradientLightGreyTopToWhiteBottom;
             @extend .importantText;
             @extend .whiteThinShaddow;
+            &:hover {
+                @extend .gradientYellowTopToWhiteBottom;
+            }
         }
-        th:hover {
-            @extend .gradientYellowTopToWhiteBottom;
+        &:hover {
+            background: $highlightedElement !important;
+            @extend .whiteThinShaddow;
         }
-    }
-    tr:nth-child(even) {
-        @extend .GradientEven;
-    }
-    tr:nth-child(odd) {
-        @extend .GradientOdd;
-    }
-    tr:hover {
-        background:$highlightedElement !important;
-        color:$backgroundColor !important;
-        @extend .whiteThinShaddow;
+        &:nth-child(even) {
+            @extend .GradientEven;
+        }
+        &:nth-child(odd) {
+            @extend .GradientOdd;
+        }
     }
 }
 .cell_right {
@@ -76,6 +75,6 @@ table {
     font-size: 0.75em;
 }
 .leftRightSpacing {
-    padding-left:2px;
-    padding-right:2px;
+    padding-left: 2px;
+    padding-right: 2px;
 }

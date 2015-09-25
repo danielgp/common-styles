@@ -23,18 +23,26 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
-input,select,textarea {
+input,
+select,
+textarea {
     @extend .rounded;
     background-color: #f0f0f0;
-    border: 1px inset #{$foregroundColor};
-    color:#{$foregroundColor};
+    border-style: none;
     @include box-shadow(0px, 1px, 4px, rgba(0,0,0,.24), true);
+    color:#{$foregroundColor};
+    padding: 0px 2px 0px 2px;
 }
-input:hover,label:hover,select:hover,textarea:hover {
+input:hover,
+label:hover,
+select:hover,
+textarea:hover {
     background-color:#{$highlightedElement};
     outline: none;
 }
-input[type="button"],input[type="reset"],input[type="submit"] {
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
     @extend .rounded;
     box-shadow:none;
     margin:0.5em;
@@ -45,18 +53,22 @@ input[type="button"],input[type="reset"],input[type="submit"] {
     @extend .greyThinShaddow;
     @extend .gradientGrey1;
 }
-input[type="button"]:hover,input[type="submit"]:hover {
+input[type="button"]:hover,
+input[type="submit"]:hover {
     @extend .gradientGreenLightToDark;
     color:#{$foregroundColor};
 }
-input[type='checkbox'],input[type='radio'] {
+input[type='checkbox'],
+input[type='radio'] {
     box-shadow: none;
     border: none;
 }
 input[type='reset'] {
     background-color: #FF0000;
 }
-input[type='text']:focus,input[type='password']:focus,textarea:focus {
+input[type='text']:focus,
+input[type='password']:focus,
+textarea:focus {
     background-color:#{$highlightedElement};
     color:#{$foregroundColor};
     margin-bottom:5px;
@@ -64,21 +76,19 @@ input[type='text']:focus,input[type='password']:focus,textarea:focus {
     @extend .boxShadow;
     z-index: 999;
 }
-label,.fake_label {
+label,
+.fake_label {
     position:absolute;
     margin-left:5px;
     width:215px;
     border-bottom:1px dotted #dcdcdc;
-}
-label:hover {
-    background-color:#{$highlightedElement};
+    &:hover {
+        background-color:#{$highlightedElement};
+    }
 }
 select[size='1'] option:hover {
     background-color:#{$highlightedElement};
     color:#ff0000;
-}
-.fake_label:hover {
-    background-color:#{$highlightedElement};
 }
 .inputOptional {
     color: green;
@@ -93,9 +103,9 @@ select[size='1'] option:hover {
 }
 .labell {
     margin-left:220px;
-}
-.labell:hover {
-    background-color:#{$highlightedElement};
+    &:hover {
+        background-color:#{$highlightedElement};
+    }
 }
 .placeholder {
     color: #666; 
