@@ -5,19 +5,20 @@
         "This file is @generated automatically"
     ],
     "hash": "8d442a66f280be61e0f835baabcbee16",
+    "content-hash": "e66618cb3fe1fb4e08008f32da5e7bc8",
     "packages": [
         {
             "name": "components/flag-icon-css",
-            "version": "0.7.1",
+            "version": "0.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lipis/flag-icon-css.git",
-                "reference": "db9d702ac15e74a84d5d859c9f3b1ce4c1882304"
+                "reference": "63b89f891914b589d12c6e71989a0eb54d35a7a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/db9d702ac15e74a84d5d859c9f3b1ce4c1882304",
-                "reference": "db9d702ac15e74a84d5d859c9f3b1ce4c1882304",
+                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/63b89f891914b589d12c6e71989a0eb54d35a7a3",
+                "reference": "63b89f891914b589d12c6e71989a0eb54d35a7a3",
                 "shasum": ""
             },
             "type": "component",
@@ -42,7 +43,7 @@
                 }
             ],
             "description": "CSS for vector based country flags",
-            "time": "2015-03-26 16:41:06"
+            "time": "2015-09-05 08:34:56"
         },
         {
             "name": "fortawesome/font-awesome",
