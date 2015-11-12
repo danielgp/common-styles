@@ -34,6 +34,14 @@ More gradients can be generated from:     http://www.colorzilla.com/gradient-edi
     @include filter-gradient(#b4e391, #006b07, vertical); // IE6-9
     @include background-image(linear-gradient(top,  rgba(180,227,145,1) 0%,rgba(22,196,0,1) 25%,rgba(22,196,0,1) 75%,rgba(0,107,7,1) 100%));
 }
+.gradientGreenGlossy {
+    // Needs latest Compass, add '@import "compass"' to your scss
+    // Permalink - use to edit and share this gradient:
+    // http://colorzilla.com/gradient-editor/#9dd53a+0,a1d54f+50,80c217+51,7cbc0a+100;Green+Gloss+%231
+    background-color: rgb(157,213,58); // Old browsers
+    @include filter-gradient(#9dd53a, #7cbc0a, horizontal); // IE6-9 fallback on horizontal gradient
+    @include background-image(linear-gradient(left top,  rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%));
+}
 .gradientGrey1 {
     // Needs latest Compass, add '@import "compass"' to your scss
     // Permalink - use to edit and share this gradient:
