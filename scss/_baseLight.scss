@@ -30,11 +30,11 @@ SOFTWARE.
 $backgroundColor:#fff;
 $backgroundGrey:#e5e5e5;
 $companyColor:#ee3124;
-$defaultRoundedRadius:5px; 
+$defaultRoundedRadius:5px;
 $foregroundColor:#000;
 $highlightedElement:#FFFF73;
 $imageUrl:"/images/";
-$leftIconPlaceholder: center left no-repeat; 
+$leftIconPlaceholder: center left no-repeat;
 $rightIconPlaceholder: top right no-repeat;
 .appTitle {
     font-size: xx-large;
@@ -64,12 +64,16 @@ $rightIconPlaceholder: top right no-repeat;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9999', endColorstr='#fd0305',GradientType=1 ); /* IE6-9 */
 }
 .GradientEven {
-    background-color: #f2f6f8; // Old browsers
-    @include filter-gradient(#f2f6f8, #e0eff9, vertical); // IE6-9
-    @include background-image(linear-gradient(top,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%));
+    // Permalink - use to edit and share this gradient:
+    // http://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231
+    background-color: rgb(255,255,255); // Old browsers
+    @include filter-gradient(#ffffff, #f6f6f6, vertical); // IE6-9
+    @include background-image(linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%));
 }
 .GradientOdd {
-    background-color: #ffffff; // Old browsers
-    @include filter-gradient(#ffffff, #00ffff, vertical); // IE6-9
-    @include background-image(linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%));
+    // Permalink - use to edit and share this gradient:
+    // http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232
+    background-color: rgb(255,255,255); // Old browsers
+    @include filter-gradient(#ffffff, #ffffff, vertical); // IE6-9
+    @include background-image(linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%));
 }
