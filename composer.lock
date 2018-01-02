@@ -4,21 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8d442a66f280be61e0f835baabcbee16",
-    "content-hash": "e66618cb3fe1fb4e08008f32da5e7bc8",
+    "content-hash": "b7975621422182ec612509848d364c83",
     "packages": [
         {
             "name": "components/flag-icon-css",
-            "version": "0.8.4",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lipis/flag-icon-css.git",
-                "reference": "ee0f8d5bdfdcd75b2fe1db21e4486b18c250b227"
+                "reference": "b3f81d10556e007c460444ec22489e68520eb79d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/ee0f8d5bdfdcd75b2fe1db21e4486b18c250b227",
-                "reference": "ee0f8d5bdfdcd75b2fe1db21e4486b18c250b227",
+                "url": "https://api.github.com/repos/lipis/flag-icon-css/zipball/b3f81d10556e007c460444ec22489e68520eb79d",
+                "reference": "b3f81d10556e007c460444ec22489e68520eb79d",
                 "shasum": ""
             },
             "type": "component",
@@ -43,20 +42,20 @@
                 }
             ],
             "description": "CSS for vector based country flags",
-            "time": "2015-10-27 15:07:00"
+            "time": "2017-11-16T15:46:30+00:00"
         },
         {
             "name": "fortawesome/font-awesome",
-            "version": "v4.4.0",
+            "version": "v4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c"
+                "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/e554555d73a44e0a7d11b0361ad7a5325a5f551c",
-                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/a8386aae19e200ddb0f6845b5feeee5eb7013687",
+                "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687",
                 "shasum": ""
             },
             "require-dev": {
@@ -66,7 +65,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0.x-dev"
+                    "dev-master": "4.6.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -91,7 +90,7 @@
                 "font",
                 "icon"
             ],
-            "time": "2015-07-28 21:55:03"
+            "time": "2016-10-24T15:52:54+00:00"
         }
     ],
     "packages-dev": [],
