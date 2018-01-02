@@ -1,6 +1,6 @@
 {
     "name": "danielgp/common-styles",
-    "description": "Common styles crafted in SCSS and targeted to specific DOM areas so assambling would be easier",
+    "description": "Common styles crafted in SCSS and targeted to specific DOM areas so assembling would be easier",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,8 +11,8 @@
         }
     ],
     "require": {
-        "components/flag-icon-css": "*",
-        "fortawesome/font-awesome": "*"
+        "components/flag-icon-css": "~2.9.0",
+        "fortawesome/font-awesome": "~4.7.0"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
