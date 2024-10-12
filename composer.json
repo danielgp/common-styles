@@ -11,8 +11,8 @@
         }
     ],
     "require": {
-        "components/flag-icon-css": "^3",
-        "fortawesome/font-awesome": "^4.7"
+        "components/flag-icon-css": ">=7",
+        "fortawesome/font-awesome": ">=6.6"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
